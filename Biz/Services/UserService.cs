@@ -5,7 +5,7 @@ using Data;
 
 namespace Biz.Services
 {
-    class UserService : IUserService
+   public class UserService : IUserService
     {
         private readonly IRepository<User> _userRepo;
 
@@ -38,11 +38,11 @@ namespace Biz.Services
         {
             if (user.Id == 0)
             {
-                _userRepo.Update(user);
+                _userRepo.Insert(user);
             }
             else
             {
-                _userRepo.Insert(user);
+                _userRepo.Update(user);
             }
                 
         }

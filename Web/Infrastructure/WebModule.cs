@@ -14,6 +14,7 @@ namespace Web.Infrastructure
         {
             Bind<IAccountService>().To<AccountService>();
             Bind<IFacilityService>().To<FacilityService>();
+            Bind<IUserService>().To<UserService>();
         }
     }
 }

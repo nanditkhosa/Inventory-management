@@ -137,3 +137,26 @@ Suggestions:
   4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
   5) If you are using automatic module loading, ensure the search path and filters are correct.
 
+ERROR 2018-03-13 12:45:44,840 10954ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 12:45:47,273 13387ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 12:49:07,233 213346ms MvcApplication         Application_Error  - The model item passed into the dictionary is of type 'Web.ViewModels.StandardIndexViewModel', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Web.ViewModels.UserViewModel]'.
+ERROR 2018-03-13 13:08:19,372 68624ms MvcApplication         Application_Error  - The model item passed into the dictionary is of type 'Web.ViewModels.StandardIndexViewModel', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Web.ViewModels.UserViewModel]'.
+ERROR 2018-03-13 13:15:27,577 496828ms MvcApplication         Application_Error  - The model item passed into the dictionary is of type 'Web.ViewModels.StandardIndexViewModel', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Web.ViewModels.UserViewModel]'.
+ERROR 2018-03-13 13:16:47,153 576405ms MvcApplication         Application_Error  - The controller for path '/UserList' was not found or does not implement IController.
+ERROR 2018-03-13 13:18:56,885 706137ms MvcApplication         Application_Error  - The model item passed into the dictionary is of type 'Web.ViewModels.StandardIndexViewModel', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Web.ViewModels.UserViewModel]'.
+ERROR 2018-03-13 13:41:47,979 607269ms MvcApplication         Application_Error  - The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/User/Edit.aspx
+~/Views/User/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/User/Edit.cshtml
+~/Views/User/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2018-03-13 13:42:04,497 623787ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 13:42:08,879 628170ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 13:45:19,145 43111ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 13:45:20,881 44846ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 13:45:22,641 46606ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 15:37:03,095 52153ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 15:37:16,447 65505ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.

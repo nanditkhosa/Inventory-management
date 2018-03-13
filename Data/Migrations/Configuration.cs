@@ -4,8 +4,6 @@ namespace Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using Core.Domains;
-    using Core.Helpers.Security;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Data.AppContext>
     {
@@ -16,23 +14,10 @@ namespace Data.Migrations
 
         protected override void Seed(Data.AppContext context)
         {
-            var users = context.Set<Account>();
+            //  This method will be called after migrating to the latest version.
 
-            if (users.Any())
-                return;
-
-            // else seed your data here
-            var salt = "";
-
-            var user = new Account()
-            {
-                Username = "admin",
-                PasswordHash = SecurityHelper.HashPassword("password", ref salt),
-                PasswordSalt = salt
-            };
-            users.AddOrUpdate(user);
-            context.SaveChanges();
-
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data.
         }
     }
 }

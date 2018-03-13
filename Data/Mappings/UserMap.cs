@@ -23,11 +23,11 @@ namespace Data.Mappings
                     .IsRequired()
                     .HasMaxLength(100);
 
-            Property(c => c.PasswordHash)
-                    .IsRequired();
+            /* Property(c => c.PasswordHash)
+                     .IsRequired();
 
-            Property(c => c.PasswordSalt)
-                    .IsRequired();
+              Property(c => c.PasswordSalt)
+                      .IsRequired();*/
         }
     }
 }
