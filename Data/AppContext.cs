@@ -62,5 +62,7 @@ namespace Data
         }
 
         public System.Data.Entity.DbSet<Core.Domains.User> Users { get; set; }
+
+        
     }
 }

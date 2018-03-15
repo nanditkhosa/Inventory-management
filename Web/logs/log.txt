@@ -160,3 +160,63 @@ ERROR 2018-03-13 13:45:20,881 44846ms MvcApplication         Application_Error  
 ERROR 2018-03-13 13:45:22,641 46606ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
 ERROR 2018-03-13 15:37:03,095 52153ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
 ERROR 2018-03-13 15:37:16,447 65505ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 16:08:02,775 133908ms MvcApplication         Application_Error  - The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/User/Edit.aspx
+~/Views/User/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/User/Edit.cshtml
+~/Views/User/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2018-03-13 16:08:29,187 160321ms MvcApplication         Application_Error  - The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/User/Edit.aspx
+~/Views/User/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/User/Edit.cshtml
+~/Views/User/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2018-03-13 16:08:57,336 188469ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 16:18:46,778  1264ms MvcApplication         Application_Error  - The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32)' in 'Web.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+ERROR 2018-03-13 16:20:50,360 43219ms MvcApplication         Application_Error  - A public action method 'Index' was not found on controller 'Web.Controllers.UserController'.
+ERROR 2018-03-13 16:20:59,787 52647ms MvcApplication         Application_Error  - A public action method 'Index' was not found on controller 'Web.Controllers.UserController'.
+ERROR 2018-03-13 16:21:05,794 58654ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 16:21:07,279 60138ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 16:21:08,451 61311ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 16:21:08,942 61801ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 16:21:10,830 63690ms MvcApplication         Application_Error  - The controller for path '/Account/Register' was not found or does not implement IController.
+ERROR 2018-03-13 16:21:11,842 64702ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 20:03:49,602 35326ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:08:18,341 19512ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:08:27,810 28982ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:54:06,408  2216ms MvcApplication         Application_Error  - The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32)' in 'Web.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+ERROR 2018-03-13 20:54:13,542  9350ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:54:14,784 10592ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:56:04,926 120734ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 20:56:07,128 122937ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 23:22:57,164 270073ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 23:23:02,383 275292ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 23:23:11,070 283979ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 23:23:13,757 286666ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 23:23:18,656 291564ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 23:23:32,972 305880ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-13 23:39:13,098 26274ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 23:40:12,287 85462ms MvcApplication         Application_Error  - The controller for path '/Facility/Index' was not found or does not implement IController.
+ERROR 2018-03-13 23:54:19,103 100202ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-14 11:19:33,594 93549ms MvcApplication         Application_Error  - The view 'Delete' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/User/Delete.aspx
+~/Views/User/Delete.ascx
+~/Views/Shared/Delete.aspx
+~/Views/Shared/Delete.ascx
+~/Views/User/Delete.cshtml
+~/Views/User/Delete.vbhtml
+~/Views/Shared/Delete.cshtml
+~/Views/Shared/Delete.vbhtml
+ERROR 2018-03-14 11:19:52,134 112089ms MvcApplication         Application_Error  - The controller for path '/Account/Login' was not found or does not implement IController.
+ERROR 2018-03-14 11:20:00,497 120452ms MvcApplication         Application_Error  - A public action method 'login' was not found on controller 'Web.Controllers.StandardController'.
+ERROR 2018-03-14 14:17:09,782  1443ms MvcApplication         Application_Error  - The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Edit(Int32)' in 'Web.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters

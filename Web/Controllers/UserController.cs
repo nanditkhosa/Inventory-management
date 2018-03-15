@@ -51,9 +51,9 @@ namespace Web.Controllers
                     var user = new User()
                     {
                         Id = userViewModel.Id,
-                        UserName = userViewModel.UserName,
                         EmailId = userViewModel.EmailId,
-                        IsActive = true
+                        IsActive = true,
+                        PasswordHash = Guid.NewGuid().ToString("d").Substring(1, 8)
                     };
 
                     _userService.InsertOrUpdate(user);
@@ -70,16 +70,32 @@ namespace Web.Controllers
         // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var user = _userService.GetById(id);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+
+            var model = new UserViewModel(user);
+            return View("Edit", model);
+            //return View();
         }
 
         // POST: User/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, UserViewModel model)
         {
             try
             {
+               
+                var user = new User()
+                {
+                    Id = model.Id,
+                    EmailId = model.EmailId,
+                    IsActive = model.IsActive,
+                };
                 // TODO: Add update logic here
+                _userService.InsertOrUpdate(user);
 
                 return RedirectToAction("UserList");
             }
