@@ -10,10 +10,25 @@ namespace Web.ViewModels
     {
         public IEnumerable<FacilityViewModel> Facilities { get; set; }
 
+        public IEnumerable<UserViewModel> Users { get; set; }
+
 
         public StandardIndexViewModel(IEnumerable<Facility> facility)
         {
             Facilities = facility.Select(x => new FacilityViewModel(x));
+        }
+
+        public StandardIndexViewModel(IEnumerable<User> userList)
+        {
+            Users = userList.Select(user => new UserViewModel
+            {
+                EmailId = user.EmailId,
+                Id = user.Id,
+                IsActive = user.IsActive,
+                Password = user.PasswordHash,
+                FacilityId = user.FacilityId
+             
+            });
         }
     }
 

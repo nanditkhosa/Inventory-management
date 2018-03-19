@@ -61,5 +61,9 @@ namespace Data
             return modifiedPropertyNames.ToDictionary(name => name, name => entry.Property(name).OriginalValue);
         }
 
+        public System.Data.Entity.DbSet<Core.Domains.User> Users { get; set; }
+        public System.Data.Entity.DbSet<Core.Domains.Facility> Facility { get; set; }
+
+
     }
 }
