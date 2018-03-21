@@ -14,10 +14,15 @@ namespace Web.Controllers
         public readonly IUserService _userService;
         public readonly IFacilityService _facilityService;
 
-        public UserController(IUserService userService,IFacilityService facilityService)
+        public UserController(IUserService userService, IFacilityService facilityService)
         {
             _userService = userService;
             _facilityService = facilityService;
+        }
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
         }
 
         // GET: User
@@ -35,26 +40,26 @@ namespace Web.Controllers
         }
 
         // GET: User/Create
-        public ActionResult CreateUser()
+        public ActionResult Create()
         {
             var facilities = _facilityService.GetAll();
             var model = new UserViewModel {
-            ListOfAllFacilities = facilities.ToList()
+                ListOfAllFacilities = facilities.ToList()
             };
-            return View("CreateUser", model);
-        }
+            return View("Create", model);
 
+        }
+       
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateUser(UserViewModel userViewModel)
+        public ActionResult Create(UserViewModel userViewModel)
         {
             try
             {
                 // TODO: Add insert logic here
                 if (ModelState.IsValid)
                 {
-                    
                     var user = new User()
                     {
                         Id = userViewModel.Id,
@@ -87,7 +92,7 @@ namespace Web.Controllers
             }
 
             var model = new UserViewModel(user);
-            
+
             return View("Edit", model);
             //return View();
         }
@@ -103,7 +108,7 @@ namespace Web.Controllers
                 user.Id = model.Id;
                 user.EmailId = model.EmailId;
                 user.IsActive = model.IsActive;
-
+                // TODO: Add update logic here
                 _userService.InsertOrUpdate(user);
 
                 return RedirectToAction("UserList");
@@ -113,7 +118,6 @@ namespace Web.Controllers
                 return View();
             }
         }
-
 
         // GET: User/Delete/5
         public ActionResult Delete(int id)

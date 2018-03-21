@@ -104,6 +104,7 @@ namespace Web.Controllers
                     var facility = new Facility()
                     {
                         Id = model.Id,
+                        UserId = model.UserId,
                         Name = model.Name,
                         Landmark = model.Landmark,
                         Address = model.Address,
@@ -111,7 +112,7 @@ namespace Web.Controllers
                         City = model.City,
                         State = model.State,
                         ZipCode = model.ZipCode,
-                        IsActive = true
+                        IsActive = model.IsActive
                     };
 
                     _facilityService.InsertOrUpdate(facility);

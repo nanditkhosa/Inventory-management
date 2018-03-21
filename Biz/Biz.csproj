@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="Infrastructure\ServiceModule.cs" />
     <Compile Include="Interfaces\IAccountService.cs" />
+    <Compile Include="Interfaces\IAssetService.cs" />
     <Compile Include="Interfaces\IFacilityService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\AssetService.cs" />
     <Compile Include="Services\FacilityService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
@@ -57,9 +59,12 @@
       <Project>{850A523B-49F0-4867-BD78-DFE7AC401D79}</Project>
       <Name>Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data\Data.csproj">
+<ProjectReference Include="..\Data\Data.csproj">
+
       <Project>{47B7233A-AF7F-4865-8EA0-4FE1DB3A793C}</Project>
+
       <Name>Data</Name>
+
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
